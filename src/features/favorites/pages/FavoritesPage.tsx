@@ -1,10 +1,11 @@
 import { Navbar } from "../../../ui"
+import { FavoritesGrid } from "../components/FavoritesGrid"
 
 export const FavoritesPage = () => {
   return (
     <>
-      <h1>Favorites</h1>
       <Navbar />
+      <FavoritesGrid />
     </>
   )
 }

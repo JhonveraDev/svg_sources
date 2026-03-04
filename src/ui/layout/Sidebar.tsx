@@ -1,5 +1,5 @@
 import { NavLink } from "react-router-dom";
-import { navLinks } from "./data/navBar.data";
+import { navLinks } from "./data/nav-links.data";
 
 export const Sidebar = () => {
   return (
@@ -15,6 +15,7 @@ export const Sidebar = () => {
           </li>
         ))}
       </ul>
+      <hr />
     </nav>
   )
 }
