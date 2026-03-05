@@ -33,3 +33,7 @@
   background-color: color-mix(in oklab, var(--color-neutral-900) 40%, transparent);
   border: 1px solid var(--color-neutral-800);
 }
+
+.favorites-grid {
+  background-color: red;
+}

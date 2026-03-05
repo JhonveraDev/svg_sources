@@ -1,11 +1,11 @@
 import { NavLink } from "react-router-dom";
-import { navLinks } from "./data/nav-links.data";
+import { sidebarLinks } from "./data/nav-links.data";
 
 export const Sidebar = () => {
   return (
     <nav>
       <ul>
-        {navLinks.map((link) => (
+        {sidebarLinks.map((link) => (
           <li key={link.to}>
             <NavLink
               to={link.to}

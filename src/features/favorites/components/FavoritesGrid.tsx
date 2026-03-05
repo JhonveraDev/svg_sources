@@ -1,5 +1,7 @@
 export const FavoritesGrid = () => {
   return (
-    <div>FavoritesGrid</div>
+    <div className="favorites-grid">
+      FavoritesGrid
+    </div>
   )
 }
