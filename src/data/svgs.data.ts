@@ -1,25 +1,6 @@
-export type SvgAsset = {
-  light: string;
-  dark: string;
-  downloads?: {
-    label: string;
-    format: string;
-    file: string;
-  }[];
-};
+import type { SvgCategory } from "../types/svgCategory.type";
 
-export type SvgItemType = {
-  name: string;
-  assets: Record<string, SvgAsset>;
-};
-
-export type SvgCategory = {
-  id: string;
-  name: string;
-  items: SvgItemType[];
-};
-
-export const svgsData: SvgCategory[]= [
+export const svgsData: SvgCategory[] = [
   {
     id: "ai",
     name: "AI",
