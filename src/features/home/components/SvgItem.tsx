@@ -20,12 +20,12 @@ export const SvgItem = React.memo(({ svg, item }: SvgItemProps) => {
         src={getImage(svg.id, item.name, "logo", logo.dark)}
         width={120}
         alt={item.name}
-        onClick={() => addFavorite({ svg, item })}  // 👈 Click aquí
+        onClick={() => addFavorite({ svg, item })}
         style={{ cursor: "pointer", opacity: favorited ? 0.5 : 1 }}
         title={favorited ? "Ya en favoritos" : "Agregar a favoritos"}
       />
 
-      {favorited && <span>⭐</span>}  {/* feedback visual opcional */}
+      {favorited && <span>⭐</span>}
     </div>
   );
 });
