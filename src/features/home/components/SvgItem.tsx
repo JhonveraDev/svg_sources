@@ -3,23 +3,24 @@ import { getImage } from "../../../shared/utils/svgs.utils";
 import type { SvgItemProps } from "../index";
 
 export const SvgItem = React.memo(({ svg, item }: SvgItemProps) => {
+  const logo = item.assets.logo;
+
+  if (!logo) return null;
+
   return (
     <div className="grid__item">
       <h3>{item.name}</h3>
 
-      {Object.entries(item.assets).map(([assetType, asset]) => (
-        <img
-          key={assetType}
-          src={getImage(
-            svg.id,
-            item.name,
-            assetType,
-            asset.dark
-          )}
-          width={120}
-          alt={item.name}
-        />
-      ))}
+      <img
+        src={getImage(
+          svg.id,
+          item.name,
+          "logo",
+          logo.dark
+        )}
+        width={120}
+        alt={item.name}
+      />
     </div>
   );
 });
