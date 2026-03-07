@@ -1,5 +1,4 @@
-import { SvgItem } from "./SvgItem";
-import { useSvgItems } from "../hooks/useSvgItems";
+import { SvgItem, useSvgItems } from "../index";
 
 export const HomeGrid = () => {
   const items = useSvgItems();

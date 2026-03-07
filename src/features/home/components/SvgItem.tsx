@@ -1,6 +1,6 @@
 import React from "react";
-import { getImage } from "../../../utils/svgs.utils";
-import type { SvgItemProps } from "../utils/SvgItem.types";
+import { getImage } from "../../../shared/utils/svgs.utils";
+import type { SvgItemProps } from "../index";
 
 export const SvgItem = React.memo(({ svg, item }: SvgItemProps) => {
   return (

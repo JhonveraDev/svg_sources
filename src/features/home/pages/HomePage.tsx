@@ -1,5 +1,5 @@
 import { Navbar } from "../../../ui"
-import { HomeGrid } from "../components/HomeGrid"
+import { HomeGrid } from "../index"
 
 export const HomePage = () => {
   return (

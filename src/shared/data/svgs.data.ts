@@ -1,4 +1,4 @@
-import type { SvgCategory } from "../types/svgCategory.type";
+import type { SvgCategory } from "../types/svgs.types";
 
 export const svgsData: SvgCategory[] = [
   {

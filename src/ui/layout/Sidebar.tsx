@@ -1,6 +1,6 @@
 import { NavLink } from "react-router-dom";
 import { sidebarLinks } from "./data/nav-links.data";
-import { svgsData } from "../../data/svgs.data";
+import { svgsData } from "../../shared/data/svgs.data";
 
 export const Sidebar = () => {
   return (
