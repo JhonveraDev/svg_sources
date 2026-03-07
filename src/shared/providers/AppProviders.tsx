@@ -1,5 +1,5 @@
 import type { ReactNode } from "react";
-import { FavoritesProvider } from "../context/FavoritesContext";
+import { FavoritesProvider } from "../index";
 
 export const AppProviders = ({ children }: { children: ReactNode }) => (
   <FavoritesProvider>

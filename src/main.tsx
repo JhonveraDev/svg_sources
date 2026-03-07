@@ -1,9 +1,7 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import { BrowserRouter } from 'react-router-dom';
-import { AppProviders } from "./shared/providers/AppProviders.tsx";
-
-
+import { AppProviders } from "./shared/index.ts";
 import App from './App.tsx';
 
 import "./assets/styles/reset.css";

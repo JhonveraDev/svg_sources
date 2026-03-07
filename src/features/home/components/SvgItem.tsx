@@ -1,6 +1,5 @@
 import React from "react";
-import { getImage } from "../../../shared/utils/svgs.utils";
-import { useFavorites } from "../../../shared/context/FavoritesContext";
+import { getImage, useFavorites } from "../../../shared/index";
 import type { SvgItemProps } from "../index";
 
 export const SvgItem = React.memo(({ svg, item }: SvgItemProps) => {

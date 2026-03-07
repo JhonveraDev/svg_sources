@@ -1,5 +1,5 @@
 import { createContext, useContext, useState, type ReactNode } from "react";
-import type { SvgItemProps } from "../../features/home/types/svgItem.types";
+import type { SvgItemProps } from "../../features/home/index";
 
 type FavoriteItem = SvgItemProps;
 

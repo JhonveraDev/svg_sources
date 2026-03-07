@@ -1,16 +1,16 @@
 import { Routes, Route } from "react-router-dom";
 
-import Layout from "../ui/layout/Layout";
-import { FavoritesPage } from "../features/favorites/pages/FavoritesPage";
-import { HomeGrid } from "../features/home/components/HomeGrid";
+import Layout from "../shared/ui/layout/Layout";
+import { HomePage } from "../features/home/index";
+import { FavoritesPage } from "../features/favorites/index";
 
 export default function AppRouter() {
   return (
     <Routes>
       <Route element={<Layout />}>
-        <Route index element={<HomeGrid />} />
+        <Route index element={<HomePage />} />
         <Route path="favorites" element={<FavoritesPage />} />
-        <Route path="category/:id" element={<HomeGrid />} />
+        <Route path="category/:id" element={<HomePage />} />
       </Route>
     </Routes>
   );

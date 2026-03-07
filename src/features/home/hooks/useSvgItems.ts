@@ -1,6 +1,6 @@
 import { useMemo } from "react";
 import { useParams } from "react-router-dom";
-import { svgsData } from "../../../shared/data/svgs.data";
+import { svgsData } from "../../../shared/index";
 
 export const useSvgItems = () => {
   const { id } = useParams<{ id?: string }>();

@@ -1,5 +1,5 @@
-import { Navbar } from "../../../ui"
-import { FavoritesGrid } from "../components/FavoritesGrid"
+import { Navbar } from "../../../shared/ui/index"
+import { FavoritesGrid } from "../index"
 
 export const FavoritesPage = () => {
   return (

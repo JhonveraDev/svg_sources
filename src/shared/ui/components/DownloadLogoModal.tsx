@@ -1,4 +1,4 @@
-export const GridContent = () => {
+export const DownloadLogoModal = () => {
   return (
     <div>GridContent DS</div>
   )

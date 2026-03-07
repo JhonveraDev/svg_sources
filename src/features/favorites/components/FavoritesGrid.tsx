@@ -1,4 +1,4 @@
-import { useFavorites } from "../../../shared/context/FavoritesContext";
+import { useFavorites } from "../../../shared/index";
 import { SvgItem } from "../../home/index";
 
 export const FavoritesGrid = () => {
