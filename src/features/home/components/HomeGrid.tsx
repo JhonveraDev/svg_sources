@@ -1,30 +1,27 @@
-import { svgsData } from "../data/svgs.data";
-import { getImage } from "../../../utils/svgs.utils";
+import { useParams } from "react-router-dom";
+import { useMemo } from "react";
+import { svgsData } from "../../../data/svgs.data";
+import { SvgItem } from "./SvgItem";
 
 export const HomeGrid = () => {
+  const { id } = useParams<{ id?: string }>();
+
+  const data = useMemo(() => {
+    if (!id) return svgsData;
+    return svgsData.filter((svg) => svg.id === id);
+  }, [id]);
+
   return (
-    <div>
-      {svgsData.map((svg) => (
-        <div key={svg.id}>
-          {svg.items.map((item) => (
-            <div key={item.name}>
-              <h3>{item.name}</h3>
-              {Object.entries(item.assets).map(([assetType, asset]) => (
-                <img
-                  src={getImage(
-                    svg.id,
-                    item.name,
-                    assetType,
-                    asset.dark
-                  )}
-                  width={120}
-                  alt=""
-                />
-              ))}
-            </div>
-          ))}
-        </div>
-      ))}
+    <div className="grid">
+      {data.map((svg) =>
+        svg.items.map((item) => (
+          <SvgItem
+            key={`${svg.id}-${item.name}`}
+            svg={svg}
+            item={item}
+          />
+        ))
+      )}
     </div>
   );
 };

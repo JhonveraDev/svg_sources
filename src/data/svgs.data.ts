@@ -1,7 +1,28 @@
+export type SvgAsset = {
+  light: string;
+  dark: string;
+  downloads?: {
+    label: string;
+    format: string;
+    file: string;
+  }[];
+};
 
-export const svgsData = [
+export type SvgItemType = {
+  name: string;
+  assets: Record<string, SvgAsset>;
+};
+
+export type SvgCategory = {
+  id: string;
+  name: string;
+  items: SvgItemType[];
+};
+
+export const svgsData: SvgCategory[]= [
   {
     id: "ai",
+    name: "AI",
     items: [
       {
         name: "glide",
@@ -30,6 +51,7 @@ export const svgsData = [
   },
   {
     id: "cms",
+    name: "CMS",
     items: [
       {
         name: "intlayer",
