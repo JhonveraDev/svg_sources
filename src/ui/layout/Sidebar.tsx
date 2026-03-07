@@ -24,7 +24,7 @@ export const Sidebar = () => {
           {svgsData.map((link) => (
             <li key={link.id}>
               <NavLink to={`/category/${link.id}`}>
-                {link.name}
+                {link.tec}
               </NavLink>
             </li>
           ))}

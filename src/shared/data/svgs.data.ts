@@ -3,7 +3,7 @@ import type { SvgCategory } from "../types/svgs.types";
 export const svgsData: SvgCategory[] = [
   {
     id: "ai",
-    name: "AI",
+    tec: "Ai",
     items: [
       {
         name: "glide",
@@ -32,7 +32,7 @@ export const svgsData: SvgCategory[] = [
   },
   {
     id: "cms",
-    name: "CMS",
+    tec: "CMS",
     items: [
       {
         name: "intlayer",

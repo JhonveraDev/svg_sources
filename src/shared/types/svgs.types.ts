@@ -15,6 +15,6 @@ export type SvgItemType = {
 
 export type SvgCategory = {
   id: string;
-  name: string;
+  tec: string;
   items: SvgItemType[];
 };
